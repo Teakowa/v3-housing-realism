@@ -3,7 +3,7 @@
 
 rented_housing = {
     texture = "gfx/interface/icons/goods_icons/rented_housing.dds"
-    cost = 20
+    cost = 90
     category = staple          # 属于基础民生商品，影响SoL
     local = yes                # 本地商品，各州独立市场
     # local = yes 自动意味着不可跨市场贸易
@@ -11,7 +11,7 @@ rented_housing = {
 
 owned_housing = {
     texture = "gfx/interface/icons/goods_icons/owned_housing.dds"
-    cost = 40
+    cost = 225
     category = luxury          # 产权房属于奢侈品类别，影响高财富SoL
     local = yes                # 本地商品，房价地区差异独立
 }
