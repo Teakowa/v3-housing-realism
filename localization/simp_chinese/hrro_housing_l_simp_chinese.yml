@@ -1,8 +1,12 @@
 ﻿l_simp_chinese:
  rented_housing: "租赁住房"
  rented_housing_desc: "主要由低和中等财富阶层消费的租赁住房。"
+ luxury_rented_housing: "名贵租赁住房"
+ luxury_rented_housing_desc: "由高繁荣住房公司生产的高端品牌化租赁住房服务。"
  owned_housing: "产权住房"
  owned_housing_desc: "涵盖按揭、维护、管理等成本的自有产权住房。"
+ luxury_owned_housing: "名贵产权住房"
+ luxury_owned_housing_desc: "由高繁荣住房公司生产的高端品牌化产权住房服务。"
  popneed_rented_housing: "租赁住房"
  popneed_owned_housing: "产权住房"
 
@@ -41,6 +45,11 @@
  pm_hrro_owned_publicly_traded: "上市地产公司"
  pm_hrro_owned_publicly_traded_desc: "由更广泛投资者参与的上市地产公司，产出效率略高。"
 
+ hrro_rental_housing_consortium: "租赁住房联合体"
+ hrro_rental_housing_consortium_desc: "大型租赁开发联合体。公司繁荣后可生产名贵租赁住房。"
+ hrro_homeownership_holding: "产权住房控股集团"
+ hrro_homeownership_holding_desc: "大型产权住房控股企业。公司繁荣后可生产名贵产权住房。"
+
  goods_output_rented_housing_add:0 "@rented_housing! 租赁住房每级产出"
  goods_output_rented_housing_add_desc:0 "调整每级建筑产出的 @rented_housing! 租赁住房数量。"
  goods_output_owned_housing_add:0 "@owned_housing! 产权住房每级产出"
@@ -49,3 +58,11 @@
  goods_output_rented_housing_mult_desc:0 "@rented_housing! 租赁住房产出的百分比修正。"
  goods_output_owned_housing_mult:0 "@owned_housing! 产权住房产出"
  goods_output_owned_housing_mult_desc:0 "@owned_housing! 产权住房产出的百分比修正。"
+ goods_output_luxury_rented_housing_add:0 "@luxury_rented_housing! 名贵租赁住房每级产出"
+ goods_output_luxury_rented_housing_add_desc:0 "调整每级建筑产出的 @luxury_rented_housing! 名贵租赁住房数量。"
+ goods_output_luxury_owned_housing_add:0 "@luxury_owned_housing! 名贵产权住房每级产出"
+ goods_output_luxury_owned_housing_add_desc:0 "调整每级建筑产出的 @luxury_owned_housing! 名贵产权住房数量。"
+ goods_output_luxury_rented_housing_mult:0 "@luxury_rented_housing! 名贵租赁住房产出"
+ goods_output_luxury_rented_housing_mult_desc:0 "@luxury_rented_housing! 名贵租赁住房产出的百分比修正。"
+ goods_output_luxury_owned_housing_mult:0 "@luxury_owned_housing! 名贵产权住房产出"
+ goods_output_luxury_owned_housing_mult_desc:0 "@luxury_owned_housing! 名贵产权住房产出的百分比修正。"

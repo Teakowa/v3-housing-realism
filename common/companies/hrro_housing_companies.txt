@@ -1,0 +1,40 @@
+# Housing Realism - Companies
+# Two companies map to two housing production chains.
+
+hrro_rental_housing_consortium = {
+    building_types = {
+        building_hrro_rental_developer
+    }
+    possible = {
+        has_building = {
+            building = building_hrro_rental_developer
+            level >= 5
+        }
+    }
+    modifier = {
+        goods_output_rented_housing_mult = 0.10
+    }
+    prosperity_modifier = {
+        goods_output_luxury_rented_housing_add = 8
+    }
+    prestige_good = luxury_rented_housing
+}
+
+hrro_homeownership_holding = {
+    building_types = {
+        building_hrro_owned_developer
+    }
+    possible = {
+        has_building = {
+            building = building_hrro_owned_developer
+            level >= 5
+        }
+    }
+    modifier = {
+        goods_output_owned_housing_mult = 0.10
+    }
+    prosperity_modifier = {
+        goods_output_luxury_owned_housing_add = 6
+    }
+    prestige_good = luxury_owned_housing
+}
