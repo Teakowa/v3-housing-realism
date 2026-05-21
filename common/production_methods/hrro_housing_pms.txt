@@ -5,6 +5,7 @@
 
 pm_hrro_tenement = {
     is_default = yes
+    texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 4
@@ -22,6 +23,7 @@ pm_hrro_tenement = {
 
 pm_hrro_apartment = {
     unlocking_technologies = { urbanization }
+    texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 7
@@ -42,6 +44,7 @@ pm_hrro_apartment = {
 
 pm_hrro_highrise_rental = {
     unlocking_technologies = { steel_frame_buildings }
+    texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 9
@@ -62,6 +65,7 @@ pm_hrro_highrise_rental = {
 
 pm_hrro_rental_privately_owned = {
     is_default = yes
+    texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
     building_modifiers = {
         level_scaled = {
             building_employment_capitalists_add = 100
@@ -74,6 +78,7 @@ pm_hrro_rental_privately_owned = {
 
 pm_hrro_rental_publicly_owned = {
     unlocking_laws = { law_public_health_insurance }
+    texture = "gfx/interface/icons/production_method_icons/government_run.dds"
     building_modifiers = {
         level_scaled = {
             building_employment_bureaucrats_add = 150
@@ -90,6 +95,7 @@ pm_hrro_rental_publicly_owned = {
 pm_hrro_rowhouse = {
     is_default = yes
     unlocking_technologies = { urbanization }
+    texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 4
@@ -109,6 +115,7 @@ pm_hrro_rowhouse = {
 
 pm_hrro_suburban_villa = {
     unlocking_technologies = { reinforced_concrete }
+    texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 6
@@ -131,6 +138,7 @@ pm_hrro_suburban_villa = {
 
 pm_hrro_luxury_estate = {
     unlocking_technologies = { electrical_generation }
+    texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
             building_pollution_generation_add = 5
@@ -154,6 +162,7 @@ pm_hrro_luxury_estate = {
 
 pm_hrro_owned_privately_owned = {
     is_default = yes
+    texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
     building_modifiers = {
         level_scaled = {
             building_employment_capitalists_add = 200
@@ -166,6 +175,7 @@ pm_hrro_owned_privately_owned = {
 
 pm_hrro_owned_publicly_traded = {
     unlocking_technologies = { mutual_funds }
+    texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
     building_modifiers = {
         level_scaled = {
             building_employment_capitalists_add = 100
