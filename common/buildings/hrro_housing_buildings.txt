@@ -17,9 +17,6 @@ building_hrro_rental_developer = {
         pmg_hrro_rental_ownership       # 所有权结构
     }
 
-    # 建造成本（中等）：适合各时期私人资本介入
-    construction_points = construction_cost_medium
-
     # 解锁条件：无额外技术要求，游戏开始即可建造
     # unlocking_technologies = { }
 
@@ -52,9 +49,6 @@ building_hrro_owned_developer = {
         pmg_hrro_owned_construction     # 主要生产方式组
         pmg_hrro_owned_ownership        # 所有权结构
     }
-
-    # 建造成本（高）：反映不动产开发的高资本门槛
-    construction_points = construction_cost_high
 
     # 解锁条件：需要城市化技术（urbanization）
     unlocking_technologies = { urbanization }
