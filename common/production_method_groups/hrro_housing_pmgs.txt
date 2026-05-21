@@ -3,7 +3,7 @@
 # ============================================================
 
 pmg_hrro_rental_construction = {
-    texture = "gfx/interface/icons/production_method_icons/production_methods_textile_mills.dds"
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     ai_selection = most_profitable
     production_methods = {
         pm_hrro_tenement
@@ -13,7 +13,7 @@ pmg_hrro_rental_construction = {
 }
 
 pmg_hrro_rental_ownership = {
-    texture = "gfx/interface/icons/production_method_icons/production_methods_ownership_capitalist.dds"
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     ai_selection = most_profitable
     production_methods = {
         pm_hrro_rental_privately_owned
@@ -22,7 +22,7 @@ pmg_hrro_rental_ownership = {
 }
 
 pmg_hrro_owned_construction = {
-    texture = "gfx/interface/icons/production_method_icons/production_methods_furniture_manufacturies.dds"
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     ai_selection = most_profitable
     production_methods = {
         pm_hrro_rowhouse
@@ -32,7 +32,7 @@ pmg_hrro_owned_construction = {
 }
 
 pmg_hrro_owned_ownership = {
-    texture = "gfx/interface/icons/production_method_icons/production_methods_ownership_capitalist.dds"
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     ai_selection = most_profitable
     production_methods = {
         pm_hrro_owned_privately_owned
