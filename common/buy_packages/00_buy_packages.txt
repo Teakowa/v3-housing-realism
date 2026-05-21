@@ -859,6 +859,7 @@ wealth_49 = {
 		popneed_luxury_items = 3614
 		popneed_leisure = 1446
 		popneed_owned_housing = 23370
+		popneed_rented_housing = 1
 	}
 }
 
@@ -875,6 +876,7 @@ wealth_50 = {
 		popneed_luxury_items = 3982
 		popneed_leisure = 1593
 		popneed_owned_housing = 28044
+		popneed_rented_housing = 1
 	}
 }
 
@@ -891,6 +893,7 @@ wealth_51 = {
 		popneed_luxury_items = 4430
 		popneed_leisure = 1949
 		popneed_owned_housing = 33652
+		popneed_rented_housing = 1
 	}
 }
 
@@ -907,6 +910,7 @@ wealth_52 = {
 		popneed_luxury_items = 4830
 		popneed_leisure = 2319
 		popneed_owned_housing = 40382
+		popneed_rented_housing = 1
 	}
 }
 
@@ -923,6 +927,7 @@ wealth_53 = {
 		popneed_luxury_items = 5267
 		popneed_leisure = 2739
 		popneed_owned_housing = 48458
+		popneed_rented_housing = 1
 	}
 }
 
@@ -939,6 +944,7 @@ wealth_54 = {
 		popneed_luxury_items = 5687
 		popneed_leisure = 3412
 		popneed_owned_housing = 58150
+		popneed_rented_housing = 1
 	}
 }
 
@@ -955,6 +961,7 @@ wealth_55 = {
 		popneed_luxury_items = 6261
 		popneed_leisure = 4258
 		popneed_owned_housing = 69780
+		popneed_rented_housing = 1
 	}
 }
 
@@ -971,6 +978,7 @@ wealth_56 = {
 		popneed_luxury_items = 6762
 		popneed_leisure = 5139
 		popneed_owned_housing = 83736
+		popneed_rented_housing = 1
 	}
 }
 
@@ -987,6 +995,7 @@ wealth_57 = {
 		popneed_luxury_items = 7373
 		popneed_leisure = 6193
 		popneed_owned_housing = 100484
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1003,6 +1012,7 @@ wealth_58 = {
 		popneed_luxury_items = 7965
 		popneed_leisure = 7328
 		popneed_owned_housing = 120580
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1019,6 +1029,7 @@ wealth_59 = {
 		popneed_luxury_items = 8767
 		popneed_leisure = 8416
 		popneed_owned_housing = 144696
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1035,6 +1046,7 @@ wealth_60 = {
 		popneed_luxury_items = 9648
 		popneed_leisure = 9648
 		popneed_owned_housing = 173636
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1051,6 +1063,7 @@ wealth_61 = {
 		popneed_luxury_items = 10718
 		popneed_leisure = 10718
 		popneed_owned_housing = 208363
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1067,6 +1080,7 @@ wealth_62 = {
 		popneed_luxury_items = 11795
 		popneed_leisure = 11795
 		popneed_owned_housing = 250036
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1083,6 +1097,7 @@ wealth_63 = {
 		popneed_luxury_items = 13103
 		popneed_leisure = 13103
 		popneed_owned_housing = 300043
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1099,6 +1114,7 @@ wealth_64 = {
 		popneed_luxury_items = 14419
 		popneed_leisure = 14419
 		popneed_owned_housing = 360052
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1115,6 +1131,7 @@ wealth_65 = {
 		popneed_luxury_items = 15866
 		popneed_leisure = 15866
 		popneed_owned_housing = 432062
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1131,6 +1148,7 @@ wealth_66 = {
 		popneed_luxury_items = 17459
 		popneed_leisure = 17459
 		popneed_owned_housing = 518474
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1147,6 +1165,7 @@ wealth_67 = {
 		popneed_luxury_items = 19210
 		popneed_leisure = 19210
 		popneed_owned_housing = 622169
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1163,6 +1182,7 @@ wealth_68 = {
 		popneed_luxury_items = 21136
 		popneed_leisure = 21136
 		popneed_owned_housing = 746603
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1179,6 +1199,7 @@ wealth_69 = {
 		popneed_luxury_items = 23255
 		popneed_leisure = 23255
 		popneed_owned_housing = 895924
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1195,6 +1216,7 @@ wealth_70 = {
 		popneed_luxury_items = 25586
 		popneed_leisure = 25586
 		popneed_owned_housing = 1075109
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1211,6 +1233,7 @@ wealth_71 = {
 		popneed_luxury_items = 28150
 		popneed_leisure = 28150
 		popneed_owned_housing = 1290131
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1227,6 +1250,7 @@ wealth_72 = {
 		popneed_luxury_items = 30971
 		popneed_leisure = 30971
 		popneed_owned_housing = 1548157
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1243,6 +1267,7 @@ wealth_73 = {
 		popneed_luxury_items = 34074
 		popneed_leisure = 34074
 		popneed_owned_housing = 1857788
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1259,6 +1284,7 @@ wealth_74 = {
 		popneed_luxury_items = 37486
 		popneed_leisure = 37486
 		popneed_owned_housing = 2229346
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1275,6 +1301,7 @@ wealth_75 = {
 		popneed_luxury_items = 41240
 		popneed_leisure = 41240
 		popneed_owned_housing = 2675215
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1291,6 +1318,7 @@ wealth_76 = {
 		popneed_luxury_items = 45370
 		popneed_leisure = 45370
 		popneed_owned_housing = 3210258
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1307,6 +1335,7 @@ wealth_77 = {
 		popneed_luxury_items = 49912
 		popneed_leisure = 49912
 		popneed_owned_housing = 3852310
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1323,6 +1352,7 @@ wealth_78 = {
 		popneed_luxury_items = 54909
 		popneed_leisure = 54909
 		popneed_owned_housing = 4622772
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1339,6 +1369,7 @@ wealth_79 = {
 		popneed_luxury_items = 60406
 		popneed_leisure = 60406
 		popneed_owned_housing = 5547326
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1355,6 +1386,7 @@ wealth_80 = {
 		popneed_luxury_items = 66452
 		popneed_leisure = 66452
 		popneed_owned_housing = 6656791
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1371,6 +1403,7 @@ wealth_81 = {
 		popneed_luxury_items = 73102
 		popneed_leisure = 73102
 		popneed_owned_housing = 7988149
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1387,6 +1420,7 @@ wealth_82 = {
 		popneed_luxury_items = 80418
 		popneed_leisure = 80418
 		popneed_owned_housing = 9585779
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1403,6 +1437,7 @@ wealth_83 = {
 		popneed_luxury_items = 88465
 		popneed_leisure = 88465
 		popneed_owned_housing = 11502935
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1419,6 +1454,7 @@ wealth_84 = {
 		popneed_luxury_items = 97317
 		popneed_leisure = 97317
 		popneed_owned_housing = 13803522
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1435,6 +1471,7 @@ wealth_85 = {
 		popneed_luxury_items = 107055
 		popneed_leisure = 107055
 		popneed_owned_housing = 16564226
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1451,6 +1488,7 @@ wealth_86 = {
 		popneed_luxury_items = 117765
 		popneed_leisure = 117765
 		popneed_owned_housing = 19877071
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1467,6 +1505,7 @@ wealth_87 = {
 		popneed_luxury_items = 129547
 		popneed_leisure = 129547
 		popneed_owned_housing = 23852485
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1483,6 +1522,7 @@ wealth_88 = {
 		popneed_luxury_items = 142508
 		popneed_leisure = 142508
 		popneed_owned_housing = 28622982
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1499,6 +1539,7 @@ wealth_89 = {
 		popneed_luxury_items = 156764
 		popneed_leisure = 156764
 		popneed_owned_housing = 34347578
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1515,6 +1556,7 @@ wealth_90 = {
 		popneed_luxury_items = 172446
 		popneed_leisure = 172446
 		popneed_owned_housing = 41217094
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1531,6 +1573,7 @@ wealth_91 = {
 		popneed_luxury_items = 189696
 		popneed_leisure = 189696
 		popneed_owned_housing = 49460513
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1547,6 +1590,7 @@ wealth_92 = {
 		popneed_luxury_items = 208671
 		popneed_leisure = 208671
 		popneed_owned_housing = 59352616
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1563,6 +1607,7 @@ wealth_93 = {
 		popneed_luxury_items = 229544
 		popneed_leisure = 229544
 		popneed_owned_housing = 71223139
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1579,6 +1624,7 @@ wealth_94 = {
 		popneed_luxury_items = 252503
 		popneed_leisure = 252503
 		popneed_owned_housing = 85467767
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1595,6 +1641,7 @@ wealth_95 = {
 		popneed_luxury_items = 277759
 		popneed_leisure = 277759
 		popneed_owned_housing = 102561320
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1611,6 +1658,7 @@ wealth_96 = {
 		popneed_luxury_items = 305541
 		popneed_leisure = 305541
 		popneed_owned_housing = 123073584
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1627,6 +1675,7 @@ wealth_97 = {
 		popneed_luxury_items = 336100
 		popneed_leisure = 336100
 		popneed_owned_housing = 147688301
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1643,6 +1692,7 @@ wealth_98 = {
 		popneed_luxury_items = 369716
 		popneed_leisure = 369716
 		popneed_owned_housing = 177225961
+		popneed_rented_housing = 1
 	}
 }
 
@@ -1659,5 +1709,6 @@ wealth_99 = {
 		popneed_luxury_items = 406693
 		popneed_leisure = 406693
 		popneed_owned_housing = 212671153
+		popneed_rented_housing = 1
 	}
 }
