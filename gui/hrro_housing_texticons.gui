@@ -1,0 +1,19 @@
+texticon = {
+    icon = rented_housing
+    iconsize = {
+        texture = "gfx/interface/icons/goods_icons/rented_housing.dds"
+        size = { 25 25 }
+        offset = { 0 7 }
+        fontsize = 18
+    }
+}
+
+texticon = {
+    icon = owned_housing
+    iconsize = {
+        texture = "gfx/interface/icons/goods_icons/owned_housing.dds"
+        size = { 25 25 }
+        offset = { 0 7 }
+        fontsize = 18
+    }
+}

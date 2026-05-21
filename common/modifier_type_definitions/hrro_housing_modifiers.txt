@@ -1,0 +1,36 @@
+# Housing Mod - Modifier Type Definitions
+# Required so that buildings can reference these goods as input/output.
+
+goods_output_rented_housing_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_owned_housing_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_rented_housing_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_owned_housing_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}

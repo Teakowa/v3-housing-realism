@@ -1,0 +1,45 @@
+# ============================================================
+# Housing Realism - Production Method Groups
+# ============================================================
+
+# ── 租屋建造方式（主PM组） ──────────────────────────────────
+pmg_hrro_rental_construction = {
+    texture = "gfx/interface/icons/production_method_icons/production_methods_textile_mills.dds"
+    ai_selection = most_profitable
+    production_methods = {
+        pm_hrro_tenement          # 早期：木砖廉租楼（无需技术）
+        pm_hrro_apartment         # 中期：钢铁公寓楼（需城市化）
+        pm_hrro_highrise_rental   # 晚期：高层出租楼（需摩天大楼技术）
+    }
+}
+
+# ── 租屋所有权结构（PM组）──────────────────────────────────
+pmg_hrro_rental_ownership = {
+    texture = "gfx/interface/icons/production_method_icons/production_methods_ownership_capitalist.dds"
+    ai_selection = most_profitable
+    production_methods = {
+        pm_hrro_rental_privately_owned   # 私人业主（默认）
+        pm_hrro_rental_publicly_owned    # 国家/公营（需法律）
+    }
+}
+
+# ── 产权房建造方式（主PM组） ────────────────────────────────
+pmg_hrro_owned_construction = {
+    texture = "gfx/interface/icons/production_method_icons/production_methods_furniture_manufacturies.dds"
+    ai_selection = most_profitable
+    production_methods = {
+        pm_hrro_rowhouse           # 早期：联排住宅（需城市化）
+        pm_hrro_suburban_villa     # 中期：郊区别墅（需工程学）
+        pm_hrro_luxury_estate      # 晚期：豪宅庄园（需电气化）
+    }
+}
+
+# ── 产权房所有权结构（PM组）────────────────────────────────
+pmg_hrro_owned_ownership = {
+    texture = "gfx/interface/icons/production_method_icons/production_methods_ownership_capitalist.dds"
+    ai_selection = most_profitable
+    production_methods = {
+        pm_hrro_owned_privately_owned    # 私人开发商（默认）
+        pm_hrro_owned_publicly_traded    # 上市房地产公司（需技术）
+    }
+}

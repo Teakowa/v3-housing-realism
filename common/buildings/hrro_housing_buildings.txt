@@ -1,0 +1,77 @@
+# ============================================================
+# Housing Realism - Buildings
+# 两座建筑：租屋开发商 / 产权房开发商
+# building_group 挂在 bg_light_industry 下（城市制造业）
+# ============================================================
+
+# ── 租屋开发商 ──────────────────────────────────────────────
+building_hrro_rental_developer = {
+    building_group          = bg_light_industry
+    icon                    = "gfx/interface/icons/building_icons/buildings/building_textile_mills.dds"
+    city_type               = city
+    levels_per_mesh         = 5
+    residence_points_per_level = 2   # 每级贡献城市住宅点，体现人口聚集
+
+    production_method_groups = {
+        pmg_hrro_rental_construction    # 主要生产方式组（建造方式）
+        pmg_hrro_rental_ownership       # 所有权结构
+    }
+
+    # 建造成本（中等）：适合各时期私人资本介入
+    construction_points = construction_cost_medium
+
+    # 解锁条件：无额外技术要求，游戏开始即可建造
+    # unlocking_technologies = { }
+
+    # AI 行为：优先在大城市/人口超过10万的州扩张
+    ai_value = {
+        value = 5
+        if = {
+            limit = { state_population >= 100000 }
+            add = 10
+        }
+    }
+
+    should_auto_expand = {
+        default_auto_expand_rule = yes
+        any_scope_pop = {
+            count >= 50000
+        }
+    }
+}
+
+# ── 产权房开发商 ────────────────────────────────────────────
+building_hrro_owned_developer = {
+    building_group          = bg_light_industry
+    icon                    = "gfx/interface/icons/building_icons/buildings/building_furniture_manufacturies.dds"
+    city_type               = city
+    levels_per_mesh         = 5
+    residence_points_per_level = 3   # 产权房每级贡献更多住宅点
+
+    production_method_groups = {
+        pmg_hrro_owned_construction     # 主要生产方式组
+        pmg_hrro_owned_ownership        # 所有权结构
+    }
+
+    # 建造成本（高）：反映不动产开发的高资本门槛
+    construction_points = construction_cost_high
+
+    # 解锁条件：需要城市化技术（urbanization）
+    unlocking_technologies = { urbanization }
+
+    # AI 行为：优先在富裕人口多的州建造
+    ai_value = {
+        value = 3
+        if = {
+            limit = { state_population >= 200000 }
+            add = 15
+        }
+    }
+
+    should_auto_expand = {
+        default_auto_expand_rule = yes
+        any_scope_pop = {
+            count >= 100000
+        }
+    }
+}
