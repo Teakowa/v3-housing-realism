@@ -32,9 +32,7 @@ building_hrro_rental_developer = {
 
     should_auto_expand = {
         default_auto_expand_rule = yes
-        any_scope_pop = {
-            count >= 50000
-        }
+        state_population >= 50000
     }
 }
 
@@ -66,8 +64,6 @@ building_hrro_owned_developer = {
 
     should_auto_expand = {
         default_auto_expand_rule = yes
-        any_scope_pop = {
-            count >= 100000
-        }
+        state_population >= 100000
     }
 }
