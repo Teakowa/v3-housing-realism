@@ -6,12 +6,12 @@
  popneed_rented_housing: "租赁住房"
  popneed_owned_housing: "产权住房"
 
- building_hrro_rental_developer: "租赁住房开发商"
- building_hrro_rental_developer_desc: "为城市工人和中下阶层开发并运营租赁住房。"
- building_hrro_rental_developer_lens_option: "扩建租赁住房开发商"
- building_hrro_owned_developer: "住宅地产开发商"
- building_hrro_owned_developer_desc: "开发出售型住宅，并统筹私有住房的融资、装修与服务。"
- building_hrro_owned_developer_lens_option: "扩建住宅地产开发商"
+ building_hrro_rental_developer: "租赁住宅区"
+ building_hrro_rental_developer_desc: "为城市工人和中下阶层提供租赁住房。"
+ building_hrro_rental_developer_lens_option: "扩建租赁住宅区"
+ building_hrro_owned_developer: "产权住宅区"
+ building_hrro_owned_developer_desc: "提供出售型住宅供给，并统筹私有住房融资、装修与服务。"
+ building_hrro_owned_developer_lens_option: "扩建产权住宅区"
 
  pmg_hrro_rental_construction: "建造方式"
  pmg_hrro_rental_ownership: "所有制结构"

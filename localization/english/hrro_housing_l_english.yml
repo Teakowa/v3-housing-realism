@@ -6,12 +6,12 @@
  popneed_rented_housing: "Rental Housing"
  popneed_owned_housing: "Owned Housing"
 
- building_hrro_rental_developer: "Rental Housing Developer"
- building_hrro_rental_developer_desc: "Develops and manages rental housing for urban workers and lower middle-income pops."
- building_hrro_rental_developer_lens_option: "Expand Rental Housing Developer"
- building_hrro_owned_developer: "Residential Property Developer"
- building_hrro_owned_developer_desc: "Develops homes for sale and coordinates financing, furnishing, and servicing for privately owned housing."
- building_hrro_owned_developer_lens_option: "Expand Residential Property Developer"
+ building_hrro_rental_developer: "Rental Housing District"
+ building_hrro_rental_developer_desc: "A regional housing-supply district that provides rental housing for urban workers and lower middle-income pops."
+ building_hrro_rental_developer_lens_option: "Expand Rental Housing District"
+ building_hrro_owned_developer: "Homeownership Housing District"
+ building_hrro_owned_developer_desc: "A regional housing-supply district that provides homes for sale and coordinates financing, furnishing, and servicing for privately owned housing."
+ building_hrro_owned_developer_lens_option: "Expand Homeownership Housing District"
 
  pmg_hrro_rental_construction: "Construction Method"
  pmg_hrro_rental_ownership: "Ownership Structure"
