@@ -5,7 +5,7 @@
     "game_id": "victoria3",
     "supported_game_version": "1.13.*",
     "short_description": "Adds rental and owned housing as local goods consumed by pops based on wealth tier, simulating real estate markets within each state.",
-    "tags": ["Economy", "Gameplay"],
+    "tags": ["Economy and Buildings", "Gameplay"],
     "relationships": [],
     "game_custom_data": {
         "multiplayer_synchronized": false
