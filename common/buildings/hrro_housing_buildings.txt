@@ -8,6 +8,7 @@
 building_hrro_rental_developer = {
     building_group          = bg_light_industry
     icon                    = "gfx/interface/icons/building_icons/buildings/building_textile_mills.dds"
+    background              = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
     city_type               = city
     levels_per_mesh         = 5
     residence_points_per_level = 2   # 每级贡献城市住宅点，体现人口聚集
@@ -41,6 +42,7 @@ building_hrro_rental_developer = {
 building_hrro_owned_developer = {
     building_group          = bg_light_industry
     icon                    = "gfx/interface/icons/building_icons/buildings/building_furniture_manufacturies.dds"
+    background              = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
     city_type               = city
     levels_per_mesh         = 5
     residence_points_per_level = 3   # 产权房每级贡献更多住宅点
