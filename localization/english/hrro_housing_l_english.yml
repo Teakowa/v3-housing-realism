@@ -1,8 +1,12 @@
 ﻿l_english:
  rented_housing: "Rental Housing"
  rented_housing_desc: "Rental housing services mainly consumed by low and middle-wealth pops. This is a local good priced within each state."
+ luxury_rented_housing: "Prestige Rental Housing"
+ luxury_rented_housing_desc: "High-grade branded rental housing services produced by prosperous housing companies."
  owned_housing: "Owned Housing"
  owned_housing_desc: "Homeownership services covering mortgages, maintenance, management, and related ownership costs. This is a local good priced within each state."
+ luxury_owned_housing: "Prestige Owned Housing"
+ luxury_owned_housing_desc: "High-grade branded owner housing services produced by prosperous housing companies."
  popneed_rented_housing: "Rental Housing"
  popneed_owned_housing: "Owned Housing"
 
@@ -41,6 +45,11 @@
  pm_hrro_owned_publicly_traded: "Publicly Traded Property Company"
  pm_hrro_owned_publicly_traded_desc: "A listed property company with wider investor participation and slightly higher output efficiency."
 
+ hrro_rental_housing_consortium: "Rental Housing Consortium"
+ hrro_rental_housing_consortium_desc: "A large rental developer consortium. Once prosperous, it can produce prestige rental housing."
+ hrro_homeownership_holding: "Homeownership Holdings Group"
+ hrro_homeownership_holding_desc: "A major ownership-housing holding company. Once prosperous, it can produce prestige owned housing."
+
  goods_output_rented_housing_add:0 "@rented_housing! Rental Housing Output per Level"
  goods_output_rented_housing_add_desc:0 "Modifies @rented_housing! Rental Housing output per building level."
  goods_output_owned_housing_add:0 "@owned_housing! Owned Housing Output per Level"
@@ -49,3 +58,11 @@
  goods_output_rented_housing_mult_desc:0 "Percentage modifier for @rented_housing! Rental Housing output."
  goods_output_owned_housing_mult:0 "@owned_housing! Owned Housing Output"
  goods_output_owned_housing_mult_desc:0 "Percentage modifier for @owned_housing! Owned Housing output."
+ goods_output_luxury_rented_housing_add:0 "@luxury_rented_housing! Prestige Rental Housing Output per Level"
+ goods_output_luxury_rented_housing_add_desc:0 "Modifies @luxury_rented_housing! Prestige Rental Housing output per building level."
+ goods_output_luxury_owned_housing_add:0 "@luxury_owned_housing! Prestige Owned Housing Output per Level"
+ goods_output_luxury_owned_housing_add_desc:0 "Modifies @luxury_owned_housing! Prestige Owned Housing output per building level."
+ goods_output_luxury_rented_housing_mult:0 "@luxury_rented_housing! Prestige Rental Housing Output"
+ goods_output_luxury_rented_housing_mult_desc:0 "Percentage modifier for @luxury_rented_housing! Prestige Rental Housing output."
+ goods_output_luxury_owned_housing_mult:0 "@luxury_owned_housing! Prestige Owned Housing Output"
+ goods_output_luxury_owned_housing_mult_desc:0 "Percentage modifier for @luxury_owned_housing! Prestige Owned Housing output."

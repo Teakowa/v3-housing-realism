@@ -34,3 +34,37 @@ goods_output_owned_housing_mult = {
         ai_value = 0
     }
 }
+
+goods_output_luxury_rented_housing_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_luxury_owned_housing_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_luxury_rented_housing_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_luxury_owned_housing_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}

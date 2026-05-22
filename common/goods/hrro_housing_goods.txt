@@ -9,9 +9,23 @@ rented_housing = {
     # local = yes 自动意味着不可跨市场贸易
 }
 
+luxury_rented_housing = {
+    texture = "gfx/interface/icons/goods_icons/rented_housing.dds"
+    cost = 180
+    category = luxury
+    local = yes
+}
+
 owned_housing = {
     texture = "gfx/interface/icons/goods_icons/owned_housing.dds"
     cost = 225
     category = luxury          # 产权房属于奢侈品类别，影响高财富SoL
     local = yes                # 本地商品，房价地区差异独立
+}
+
+luxury_owned_housing = {
+    texture = "gfx/interface/icons/goods_icons/owned_housing.dds"
+    cost = 420
+    category = luxury
+    local = yes
 }

@@ -16,10 +16,18 @@ Housing Realism is a *Victoria 3* economy mod that models housing as explicit lo
   - Local good (`local = yes`)
   - Category: `staple`
   - Intended for low to lower-middle wealth demand
+- `luxury_rented_housing`
+  - Local good (`local = yes`)
+  - Category: `luxury`
+  - Prestige variant of rental housing produced by prosperous companies
 - `owned_housing`
   - Local good (`local = yes`)
   - Category: `luxury`
   - Intended for middle to high wealth demand
+- `luxury_owned_housing`
+  - Local good (`local = yes`)
+  - Category: `luxury`
+  - Prestige variant of owner housing produced by prosperous companies
 
 ### Buildings and PM Layers
 
@@ -33,6 +41,17 @@ Housing Realism is a *Victoria 3* economy mod that models housing as explicit lo
 - `popneed_rented_housing` is used for lower wealth tiers and fades out at higher wealth.
 - `popneed_owned_housing` appears from mid wealth and scales strongly at high wealth.
 - Housing demand is injected into vanilla `wealth_1` to `wealth_99` via `INJECT:wealth_X` entries in `common/buy_packages/hrro_buy_packages_inject.txt`.
+- No standalone prestige pop need is added. Prestige housing variants are consumed via substitution entries in the two existing housing pop needs.
+
+### Companies and Prestige Housing
+
+- Two dedicated housing companies are added:
+  - `hrro_rental_housing_consortium` -> `building_hrro_rental_developer`
+  - `hrro_homeownership_holding` -> `building_hrro_owned_developer`
+- Company establishment provides base chain bonuses.
+- Once company prosperity is active, the corresponding prestige housing good can be produced:
+  - `luxury_rented_housing`
+  - `luxury_owned_housing`
 
 ### Local Price Dynamics
 
@@ -112,7 +131,6 @@ Source of truth: `.metadata/metadata.json`
 ## Non-goals (Current Version)
 
 - No law-system integration shipped yet.
-- No dedicated company-system expansion shipped yet.
 - No custom housing UI analytics panel shipped yet.
 
 ## Terminology

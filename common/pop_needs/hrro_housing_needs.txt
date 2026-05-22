@@ -10,6 +10,12 @@ popneed_rented_housing = {
         max_supply_share = 1.0
         min_supply_share = 0.0
     }
+    entry = {
+        goods = luxury_rented_housing
+        weight = 1.25
+        max_supply_share = 0.75
+        min_supply_share = 0.0
+    }
 }
 
 # 产权房需求 —— 使用单一商品，无替换
@@ -20,6 +26,12 @@ popneed_owned_housing = {
         goods = owned_housing
         weight = 1
         max_supply_share = 1.0
+        min_supply_share = 0.0
+    }
+    entry = {
+        goods = luxury_owned_housing
+        weight = 1.35
+        max_supply_share = 0.8
         min_supply_share = 0.0
     }
 }
