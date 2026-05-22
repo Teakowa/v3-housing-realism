@@ -32,7 +32,7 @@ building_hrro_rental_developer = {
 
     should_auto_expand = {
         default_auto_expand_rule = yes
-        state_population >= 50000
+        state = { state_population >= 50000 }
     }
 }
 
@@ -64,6 +64,6 @@ building_hrro_owned_developer = {
 
     should_auto_expand = {
         default_auto_expand_rule = yes
-        state_population >= 100000
+        state = { state_population >= 100000 }
     }
 }
