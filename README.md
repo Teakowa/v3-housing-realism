@@ -48,6 +48,12 @@ Both housing goods are local goods, so housing pressure and price are state-leve
 
 Source of truth: `.metadata/metadata.json`
 
+## Compatibility Authoring Rules
+
+- Default to `INJECT` when extending vanilla existing objects.
+- Use `REPLACE` only when structural replacement is truly required; add a one-line reason next to that entry.
+- Keep custom gameplay content as additive new keys (`building_hrro_*`, `pmg_hrro_*`, `pm_hrro_*`) instead of redefining vanilla same-name objects.
+
 ## Repository Map
 
 - `common/goods/`
