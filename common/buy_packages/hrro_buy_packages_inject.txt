@@ -4,84 +4,98 @@
 INJECT:wealth_1 = {
 	goods = {
 		popneed_rented_housing = 10
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_2 = {
 	goods = {
 		popneed_rented_housing = 14
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_3 = {
 	goods = {
 		popneed_rented_housing = 20
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_4 = {
 	goods = {
 		popneed_rented_housing = 28
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_5 = {
 	goods = {
 		popneed_rented_housing = 36
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_6 = {
 	goods = {
 		popneed_rented_housing = 44
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_7 = {
 	goods = {
 		popneed_rented_housing = 52
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_8 = {
 	goods = {
 		popneed_rented_housing = 60
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_9 = {
 	goods = {
 		popneed_rented_housing = 68
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_10 = {
 	goods = {
 		popneed_rented_housing = 74
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_11 = {
 	goods = {
 		popneed_rented_housing = 78
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_12 = {
 	goods = {
 		popneed_rented_housing = 80
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_13 = {
 	goods = {
 		popneed_rented_housing = 80
+		popneed_owned_housing = 1
 	}
 }
 
 INJECT:wealth_14 = {
 	goods = {
 		popneed_rented_housing = 80
+		popneed_owned_housing = 1
 	}
 }
 

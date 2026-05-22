@@ -1,25 +1,35 @@
 # Housing Mod - Pop Needs Definition
 
-# 租房需求 —— 使用单一商品，无替换
-# 曲线类型: Temporary Need（中低财富出现，高财富消退）
+# 租房需求池 —— 租房主导，允许按价格切换到产权房
 popneed_rented_housing = {
     default = rented_housing
     entry = {
         goods = rented_housing
-        weight = 1
+        weight = 6
         max_supply_share = 1.0
+        min_supply_share = 0.4
+    }
+    entry = {
+        goods = owned_housing
+        weight = 1
+        max_supply_share = 0.6
         min_supply_share = 0.0
     }
 }
 
-# 产权房需求 —— 使用单一商品，无替换
-# 曲线类型: Exponential Need（高财富出现，指数增长）
+# 产权房需求池 —— 产权房主导，允许按价格切换到租房
 popneed_owned_housing = {
     default = owned_housing
     entry = {
         goods = owned_housing
-        weight = 1
+        weight = 6
         max_supply_share = 1.0
+        min_supply_share = 0.4
+    }
+    entry = {
+        goods = rented_housing
+        weight = 1
+        max_supply_share = 0.6
         min_supply_share = 0.0
     }
 }

@@ -15,9 +15,10 @@ Housing goods follow the `local = yes` design logic, similar to vanilla Services
 
 ## Pop Needs and Wealth Stratification
 
-Housing needs use two separate demand directions to express wealth differences:
+Housing needs keep two demand directions to express wealth preference, but both directions now allow rent/ownership substitution inside the same need pool:
 
-- `rented_housing` targets low- to lower-middle-wealth Pops, peaking around mid-range wealth and then gradually fading out.
-- `owned_housing` appears from the middle class onward and keeps strengthening at high wealth, forming a clear preference for ownership housing.[2]
+- `popneed_rented_housing` remains rent-led, and still carries a clear low-to-mid wealth orientation.
+- `popneed_owned_housing` remains ownership-led, and still strengthens as wealth rises.
+- Final rent-vs-own allocation is determined jointly by wealth preference and state-local price/supply conditions, so rich Pops can still rent when rental housing is the better market option.
 
-This does not split housing into multiple goods such as "cheap houses" and "luxury houses." Instead, it uses a rent/ownership binary structure and expresses internal layering through wealth curves and building input structures. This balances complexity and gameplay usability.[2]
+This does not split housing into multiple goods such as "cheap houses" and "luxury houses." Instead, it keeps the rent/ownership binary structure and expresses internal layering through wealth curves, substitution shares, and building input structures. This balances complexity and gameplay usability.[2]
