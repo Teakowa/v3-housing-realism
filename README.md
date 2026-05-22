@@ -32,7 +32,7 @@ Housing Realism is a *Victoria 3* economy mod that models housing as explicit lo
 
 - `popneed_rented_housing` is used for lower wealth tiers and fades out at higher wealth.
 - `popneed_owned_housing` appears from mid wealth and scales strongly at high wealth.
-- `common/buy_packages/00_buy_packages.txt` is fully overridden for `wealth_1` to `wealth_99` to encode this transition.
+- Housing demand is injected into vanilla `wealth_1` to `wealth_99` via `INJECT:wealth_X` entries in `common/buy_packages/hrro_buy_packages_inject.txt`.
 
 ### Local Price Dynamics
 
