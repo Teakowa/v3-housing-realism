@@ -1,5 +1,6 @@
-# Housing Mod - Incremental buy_packages injection via Community Mod Framework
-# Generated from previous full override to preserve housing demand curve.
+# Housing Mod - Incremental buy_packages injection via Victoria 3 database entry modes
+# Generated from the previous full override to preserve the housing demand curve
+# while using native INJECT entries for 1.13 compatibility.
 
 INJECT:wealth_1 = {
 	goods = {
@@ -693,4 +694,3 @@ INJECT:wealth_99 = {
 		popneed_owned_housing = 212671153
 	}
 }
-
