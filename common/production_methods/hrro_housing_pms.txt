@@ -65,7 +65,7 @@ pm_hrro_rental_privately_owned = {
             building_employment_capitalists_add = 100
         }
         unscaled = {
-            building_ownership_shares_add = 1
+            building_capitalists_shares_add = 1
         }
     }
 }
@@ -79,7 +79,7 @@ pm_hrro_rental_publicly_owned = {
             goods_output_rented_housing_add = -3
         }
         unscaled = {
-            building_ownership_shares_add = 0
+            building_bureaucrats_shares_add = 1
         }
     }
 }
@@ -154,7 +154,7 @@ pm_hrro_owned_privately_owned = {
             building_employment_capitalists_add = 80
         }
         unscaled = {
-            building_ownership_shares_add = 1
+            building_capitalists_shares_add = 1
         }
     }
 }
@@ -170,7 +170,7 @@ pm_hrro_owned_publicly_traded = {
             goods_output_owned_housing_add = 2
         }
         unscaled = {
-            building_ownership_shares_add = 1
+            building_capitalists_shares_add = 1
         }
     }
 }
