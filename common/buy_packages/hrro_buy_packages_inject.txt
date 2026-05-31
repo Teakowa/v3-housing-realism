@@ -4,693 +4,693 @@
 
 INJECT:wealth_1 = {
 	goods = {
-		popneed_rented_housing = 10
-		popneed_owned_housing = 1
+		popneed_rented_housing = 11
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_2 = {
 	goods = {
-		popneed_rented_housing = 14
-		popneed_owned_housing = 1
+		popneed_rented_housing = 15
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_3 = {
 	goods = {
-		popneed_rented_housing = 20
-		popneed_owned_housing = 1
+		popneed_rented_housing = 21
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_4 = {
 	goods = {
-		popneed_rented_housing = 28
-		popneed_owned_housing = 1
+		popneed_rented_housing = 29
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_5 = {
 	goods = {
-		popneed_rented_housing = 36
-		popneed_owned_housing = 1
+		popneed_rented_housing = 37
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_6 = {
 	goods = {
-		popneed_rented_housing = 44
-		popneed_owned_housing = 1
+		popneed_rented_housing = 45
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_7 = {
 	goods = {
-		popneed_rented_housing = 52
-		popneed_owned_housing = 1
+		popneed_rented_housing = 53
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_8 = {
 	goods = {
-		popneed_rented_housing = 60
-		popneed_owned_housing = 1
+		popneed_rented_housing = 61
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_9 = {
 	goods = {
-		popneed_rented_housing = 68
-		popneed_owned_housing = 1
+		popneed_rented_housing = 69
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_10 = {
 	goods = {
-		popneed_rented_housing = 74
-		popneed_owned_housing = 1
+		popneed_rented_housing = 75
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_11 = {
 	goods = {
-		popneed_rented_housing = 78
-		popneed_owned_housing = 1
+		popneed_rented_housing = 79
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_12 = {
 	goods = {
-		popneed_rented_housing = 80
-		popneed_owned_housing = 1
+		popneed_rented_housing = 81
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_13 = {
 	goods = {
-		popneed_rented_housing = 80
-		popneed_owned_housing = 1
+		popneed_rented_housing = 81
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_14 = {
 	goods = {
-		popneed_rented_housing = 80
-		popneed_owned_housing = 1
+		popneed_rented_housing = 81
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_15 = {
 	goods = {
-		popneed_rented_housing = 76
-		popneed_owned_housing = 8
+		popneed_rented_housing = 84
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_16 = {
 	goods = {
-		popneed_rented_housing = 68
-		popneed_owned_housing = 12
+		popneed_rented_housing = 80
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_17 = {
 	goods = {
-		popneed_rented_housing = 58
-		popneed_owned_housing = 18
+		popneed_rented_housing = 76
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_18 = {
 	goods = {
-		popneed_rented_housing = 46
-		popneed_owned_housing = 26
+		popneed_rented_housing = 72
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_19 = {
 	goods = {
-		popneed_rented_housing = 32
-		popneed_owned_housing = 36
+		popneed_rented_housing = 68
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_20 = {
 	goods = {
-		popneed_rented_housing = 30
-		popneed_owned_housing = 44
+		popneed_rented_housing = 74
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_21 = {
 	goods = {
-		popneed_rented_housing = 28
-		popneed_owned_housing = 50
+		popneed_rented_housing = 78
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_22 = {
 	goods = {
-		popneed_rented_housing = 26
-		popneed_owned_housing = 58
+		popneed_rented_housing = 84
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_23 = {
 	goods = {
-		popneed_rented_housing = 24
-		popneed_owned_housing = 68
+		popneed_rented_housing = 92
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_24 = {
 	goods = {
-		popneed_rented_housing = 22
-		popneed_owned_housing = 80
+		popneed_rented_housing = 102
+		popneed_owned_housing = 0
 	}
 }
 
 INJECT:wealth_25 = {
 	goods = {
-		popneed_rented_housing = 20
-		popneed_owned_housing = 94
+		popneed_rented_housing = 80
+		popneed_owned_housing = 34
 	}
 }
 
 INJECT:wealth_26 = {
 	goods = {
-		popneed_rented_housing = 19
-		popneed_owned_housing = 110
+		popneed_rented_housing = 88
+		popneed_owned_housing = 41
 	}
 }
 
 INJECT:wealth_27 = {
 	goods = {
-		popneed_rented_housing = 18
-		popneed_owned_housing = 128
+		popneed_rented_housing = 96
+		popneed_owned_housing = 50
 	}
 }
 
 INJECT:wealth_28 = {
 	goods = {
-		popneed_rented_housing = 17
-		popneed_owned_housing = 148
+		popneed_rented_housing = 106
+		popneed_owned_housing = 59
 	}
 }
 
 INJECT:wealth_29 = {
 	goods = {
-		popneed_rented_housing = 16
-		popneed_owned_housing = 170
+		popneed_rented_housing = 115
+		popneed_owned_housing = 71
 	}
 }
 
 INJECT:wealth_30 = {
 	goods = {
-		popneed_rented_housing = 15
-		popneed_owned_housing = 194
+		popneed_rented_housing = 125
+		popneed_owned_housing = 84
 	}
 }
 
 INJECT:wealth_31 = {
 	goods = {
-		popneed_rented_housing = 14
-		popneed_owned_housing = 220
+		popneed_rented_housing = 136
+		popneed_owned_housing = 98
 	}
 }
 
 INJECT:wealth_32 = {
 	goods = {
-		popneed_rented_housing = 13
-		popneed_owned_housing = 248
+		popneed_rented_housing = 146
+		popneed_owned_housing = 115
 	}
 }
 
 INJECT:wealth_33 = {
 	goods = {
-		popneed_rented_housing = 12
-		popneed_owned_housing = 278
+		popneed_rented_housing = 157
+		popneed_owned_housing = 133
 	}
 }
 
 INJECT:wealth_34 = {
 	goods = {
-		popneed_rented_housing = 11
-		popneed_owned_housing = 310
+		popneed_rented_housing = 167
+		popneed_owned_housing = 154
 	}
 }
 
 INJECT:wealth_35 = {
 	goods = {
-		popneed_rented_housing = 10
-		popneed_owned_housing = 344
+		popneed_rented_housing = 177
+		popneed_owned_housing = 177
 	}
 }
 
 INJECT:wealth_36 = {
 	goods = {
-		popneed_rented_housing = 9
-		popneed_owned_housing = 380
+		popneed_rented_housing = 187
+		popneed_owned_housing = 202
 	}
 }
 
 INJECT:wealth_37 = {
 	goods = {
-		popneed_rented_housing = 8
-		popneed_owned_housing = 418
+		popneed_rented_housing = 196
+		popneed_owned_housing = 230
 	}
 }
 
 INJECT:wealth_38 = {
 	goods = {
-		popneed_rented_housing = 7
-		popneed_owned_housing = 458
+		popneed_rented_housing = 205
+		popneed_owned_housing = 260
 	}
 }
 
 INJECT:wealth_39 = {
 	goods = {
-		popneed_rented_housing = 6
-		popneed_owned_housing = 500
+		popneed_rented_housing = 213
+		popneed_owned_housing = 293
 	}
 }
 
 INJECT:wealth_40 = {
 	goods = {
-		popneed_rented_housing = 5
-		popneed_owned_housing = 544
+		popneed_rented_housing = 220
+		popneed_owned_housing = 329
 	}
 }
 
 INJECT:wealth_41 = {
 	goods = {
-		popneed_rented_housing = 4
-		popneed_owned_housing = 620
+		popneed_rented_housing = 246
+		popneed_owned_housing = 378
 	}
 }
 
 INJECT:wealth_42 = {
 	goods = {
-		popneed_rented_housing = 4
-		popneed_owned_housing = 700
+		popneed_rented_housing = 275
+		popneed_owned_housing = 429
 	}
 }
 
 INJECT:wealth_43 = {
 	goods = {
-		popneed_rented_housing = 3
-		popneed_owned_housing = 790
+		popneed_rented_housing = 305
+		popneed_owned_housing = 488
 	}
 }
 
 INJECT:wealth_44 = {
 	goods = {
-		popneed_rented_housing = 3
-		popneed_owned_housing = 890
+		popneed_rented_housing = 339
+		popneed_owned_housing = 554
 	}
 }
 
 INJECT:wealth_45 = {
 	goods = {
-		popneed_rented_housing = 2
-		popneed_owned_housing = 1000
+		popneed_rented_housing = 376
+		popneed_owned_housing = 626
 	}
 }
 
 INJECT:wealth_46 = {
 	goods = {
-		popneed_rented_housing = 2
-		popneed_owned_housing = 1120
+		popneed_rented_housing = 415
+		popneed_owned_housing = 707
 	}
 }
 
 INJECT:wealth_47 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1250
+		popneed_rented_housing = 457
+		popneed_owned_housing = 794
 	}
 }
 
 INJECT:wealth_48 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1390
+		popneed_rented_housing = 501
+		popneed_owned_housing = 890
 	}
 }
 
 INJECT:wealth_49 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 23370
+		popneed_rented_housing = 8297
+		popneed_owned_housing = 15074
 	}
 }
 
 INJECT:wealth_50 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 28044
+		popneed_rented_housing = 9816
+		popneed_owned_housing = 18229
 	}
 }
 
 INJECT:wealth_51 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 33652
+		popneed_rented_housing = 11610
+		popneed_owned_housing = 22043
 	}
 }
 
 INJECT:wealth_52 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 40382
+		popneed_rented_housing = 13730
+		popneed_owned_housing = 26653
 	}
 }
 
 INJECT:wealth_53 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 48458
+		popneed_rented_housing = 16234
+		popneed_owned_housing = 32225
 	}
 }
 
 INJECT:wealth_54 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 58150
+		popneed_rented_housing = 19190
+		popneed_owned_housing = 38961
 	}
 }
 
 INJECT:wealth_55 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 69780
+		popneed_rented_housing = 22679
+		popneed_owned_housing = 47102
 	}
 }
 
 INJECT:wealth_56 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 83736
+		popneed_rented_housing = 26796
+		popneed_owned_housing = 56941
 	}
 }
 
 INJECT:wealth_57 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 100484
+		popneed_rented_housing = 31653
+		popneed_owned_housing = 68832
 	}
 }
 
 INJECT:wealth_58 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 120580
+		popneed_rented_housing = 37380
+		popneed_owned_housing = 83201
 	}
 }
 
 INJECT:wealth_59 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 144696
+		popneed_rented_housing = 44133
+		popneed_owned_housing = 100564
 	}
 }
 
 INJECT:wealth_60 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 173636
+		popneed_rented_housing = 52091
+		popneed_owned_housing = 121546
 	}
 }
 
 INJECT:wealth_61 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 208363
+		popneed_rented_housing = 61467
+		popneed_owned_housing = 146897
 	}
 }
 
 INJECT:wealth_62 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 250036
+		popneed_rented_housing = 72511
+		popneed_owned_housing = 177526
 	}
 }
 
 INJECT:wealth_63 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 300043
+		popneed_rented_housing = 85513
+		popneed_owned_housing = 214531
 	}
 }
 
 INJECT:wealth_64 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 360052
+		popneed_rented_housing = 100815
+		popneed_owned_housing = 259238
 	}
 }
 
 INJECT:wealth_65 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 432062
+		popneed_rented_housing = 118817
+		popneed_owned_housing = 313246
 	}
 }
 
 INJECT:wealth_66 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 518474
+		popneed_rented_housing = 139988
+		popneed_owned_housing = 378487
 	}
 }
 
 INJECT:wealth_67 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 622169
+		popneed_rented_housing = 164875
+		popneed_owned_housing = 457295
 	}
 }
 
 INJECT:wealth_68 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 746603
+		popneed_rented_housing = 194117
+		popneed_owned_housing = 552487
 	}
 }
 
 INJECT:wealth_69 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 895924
+		popneed_rented_housing = 228461
+		popneed_owned_housing = 667464
 	}
 }
 
 INJECT:wealth_70 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1075109
+		popneed_rented_housing = 268778
+		popneed_owned_housing = 806332
 	}
 }
 
 INJECT:wealth_71 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1290131
+		popneed_rented_housing = 316082
+		popneed_owned_housing = 974050
 	}
 }
 
 INJECT:wealth_72 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1548157
+		popneed_rented_housing = 371558
+		popneed_owned_housing = 1176600
 	}
 }
 
 INJECT:wealth_73 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 1857788
+		popneed_rented_housing = 436580
+		popneed_owned_housing = 1421209
 	}
 }
 
 INJECT:wealth_74 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 2229346
+		popneed_rented_housing = 512750
+		popneed_owned_housing = 1716597
 	}
 }
 
 INJECT:wealth_75 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 2675215
+		popneed_rented_housing = 601924
+		popneed_owned_housing = 2073292
 	}
 }
 
 INJECT:wealth_76 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 3210258
+		popneed_rented_housing = 706257
+		popneed_owned_housing = 2504002
 	}
 }
 
 INJECT:wealth_77 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 3852310
+		popneed_rented_housing = 828247
+		popneed_owned_housing = 3024064
 	}
 }
 
 INJECT:wealth_78 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 4622772
+		popneed_rented_housing = 970782
+		popneed_owned_housing = 3651991
 	}
 }
 
 INJECT:wealth_79 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 5547326
+		popneed_rented_housing = 1137202
+		popneed_owned_housing = 4410125
 	}
 }
 
 INJECT:wealth_80 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 6656791
+		popneed_rented_housing = 1331358
+		popneed_owned_housing = 5325434
 	}
 }
 
 INJECT:wealth_81 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 7988149
+		popneed_rented_housing = 1597630
+		popneed_owned_housing = 6390520
 	}
 }
 
 INJECT:wealth_82 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 9585779
+		popneed_rented_housing = 1917156
+		popneed_owned_housing = 7668624
 	}
 }
 
 INJECT:wealth_83 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 11502935
+		popneed_rented_housing = 2300587
+		popneed_owned_housing = 9202349
 	}
 }
 
 INJECT:wealth_84 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 13803522
+		popneed_rented_housing = 2760705
+		popneed_owned_housing = 11042818
 	}
 }
 
 INJECT:wealth_85 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 16564226
+		popneed_rented_housing = 3312845
+		popneed_owned_housing = 13251382
 	}
 }
 
 INJECT:wealth_86 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 19877071
+		popneed_rented_housing = 3975414
+		popneed_owned_housing = 15901658
 	}
 }
 
 INJECT:wealth_87 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 23852485
+		popneed_rented_housing = 4770497
+		popneed_owned_housing = 19081989
 	}
 }
 
 INJECT:wealth_88 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 28622982
+		popneed_rented_housing = 5724597
+		popneed_owned_housing = 22898386
 	}
 }
 
 INJECT:wealth_89 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 34347578
+		popneed_rented_housing = 6869516
+		popneed_owned_housing = 27478063
 	}
 }
 
 INJECT:wealth_90 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 41217094
+		popneed_rented_housing = 8243419
+		popneed_owned_housing = 32973676
 	}
 }
 
 INJECT:wealth_91 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 49460513
+		popneed_rented_housing = 9892103
+		popneed_owned_housing = 39568411
 	}
 }
 
 INJECT:wealth_92 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 59352616
+		popneed_rented_housing = 11870523
+		popneed_owned_housing = 47482094
 	}
 }
 
 INJECT:wealth_93 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 71223139
+		popneed_rented_housing = 14244628
+		popneed_owned_housing = 56978512
 	}
 }
 
 INJECT:wealth_94 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 85467767
+		popneed_rented_housing = 17093554
+		popneed_owned_housing = 68374214
 	}
 }
 
 INJECT:wealth_95 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 102561320
+		popneed_rented_housing = 20512264
+		popneed_owned_housing = 82049057
 	}
 }
 
 INJECT:wealth_96 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 123073584
+		popneed_rented_housing = 24614717
+		popneed_owned_housing = 98458868
 	}
 }
 
 INJECT:wealth_97 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 147688301
+		popneed_rented_housing = 29537660
+		popneed_owned_housing = 118150642
 	}
 }
 
 INJECT:wealth_98 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 177225961
+		popneed_rented_housing = 35445192
+		popneed_owned_housing = 141780770
 	}
 }
 
 INJECT:wealth_99 = {
 	goods = {
-		popneed_rented_housing = 1
-		popneed_owned_housing = 212671153
+		popneed_rented_housing = 42534231
+		popneed_owned_housing = 170136923
 	}
 }
