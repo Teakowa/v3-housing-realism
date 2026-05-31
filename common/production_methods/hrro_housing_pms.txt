@@ -109,11 +109,11 @@ pm_hrro_suburban_villa = {
             building_employment_shopkeepers_add = 432
             building_employment_engineers_add = 528
             building_employment_machinists_add = 720
-            goods_input_steel_add = 12
-            goods_input_glass_add = 7
-            goods_input_furniture_add = 5
-            goods_input_porcelain_add = 3
-            goods_input_services_add = 8
+            goods_input_steel_add = 13
+            goods_input_glass_add = 8
+            goods_input_furniture_add = 6
+            goods_input_porcelain_add = 4
+            goods_input_services_add = 5
             goods_output_owned_housing_add = 11
         }
     }
@@ -129,12 +129,12 @@ pm_hrro_luxury_estate = {
             building_employment_shopkeepers_add = 500
             building_employment_engineers_add = 625
             building_employment_machinists_add = 1125
-            goods_input_steel_add = 15
-            goods_input_glass_add = 11
-            goods_input_luxury_furniture_add = 9
-            goods_input_porcelain_add = 7
-            goods_input_services_add = 13
-            goods_input_electricity_add = 6
+            goods_input_steel_add = 16
+            goods_input_glass_add = 12
+            goods_input_luxury_furniture_add = 11
+            goods_input_porcelain_add = 8
+            goods_input_services_add = 8
+            goods_input_electricity_add = 7
             goods_output_owned_housing_add = 19
         }
     }
