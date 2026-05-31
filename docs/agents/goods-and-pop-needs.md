@@ -4,7 +4,7 @@
 
 | Good Key | Meaning | Good Properties | Design Notes |
 |---|---|---|---|
-| `rented_housing` | Rental housing | Local good, locally priced | Represents rent and basic residential services, mainly for low-wealth and lower-middle-wealth Pops.[1][3] |
+| `rented_housing` | Rental housing | Local good, locally priced | Represents rent, occupancy cost, and basic residential upkeep, mainly for low-wealth and lower-middle-wealth Pops.[1][3] |
 | `owned_housing` | Owner-occupied housing | Local good, locally priced | Represents mortgage, maintenance, property services, and ownership administration costs, mainly for upper-middle-wealth and high-wealth Pops.[1][2] |
 
 ## Goods Design Principles

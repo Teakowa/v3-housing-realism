@@ -1,6 +1,6 @@
 # Housing Realism - Production Methods (confirmed revision)
 
-# Rental housing: furniture input is light; no porcelain/services input.
+# Rental housing: furniture input is light; only high-end rental adds a small services input.
 # Owned housing: service-oriented employment mix; mid/high tiers consume porcelain and services.
 
 pm_hrro_tenement = {
@@ -51,6 +51,7 @@ pm_hrro_highrise_rental = {
             goods_input_steel_add = 28
             goods_input_glass_add = 20
             goods_input_furniture_add = 12
+            goods_input_services_add = 2
             goods_input_electricity_add = 10
             goods_output_rented_housing_add = 22
         }

@@ -22,9 +22,9 @@ The rental housing district leans toward dense urban housing supply, representin
 |---|---|---|---|
 | `pm_hrro_tenement` | Low-end rental | Wood, small amount of furniture | Cheap, dense, basic maintenance, mainly for working-class residents. |
 | `pm_hrro_apartment` | Mid-end rental | Wood, steel, glass, small amount of furniture | More modern urban apartments with higher output and increased technology/management input. |
-| `pm_hrro_highrise_rental` | High-end/high-density rental | Steel, glass, furniture, electricity | High-rise and core-urban form, emphasizing space efficiency. |
+| `pm_hrro_highrise_rental` | High-end/high-density rental | Steel, glass, furniture, services, electricity | High-rise and core-urban form, emphasizing space efficiency plus light property/support services. |
 
-Rental buildings are allowed to consume furniture, but intentionally at a low level to represent basic interior support without turning rental housing into heavily decorated premium housing.[4]
+Rental buildings are allowed to consume furniture, but intentionally at a low level to represent basic interior support without turning rental housing into heavily decorated premium housing.[4] Low- and mid-end rental PMs do not consume `services`; only the high-rise rental PM adds a small `services` input to abstract limited property management and supporting amenities in higher-end urban rental stock.[4][5]
 
 ## Homeownership Housing District Production Methods
 
@@ -38,7 +38,7 @@ Mid/high-end ownership PMs consume porcelain and services to reflect stronger de
 
 ## Meaning of Service Inputs
 
-Introducing the `services` good to ownership housing buildings does not mean housing itself is a pure service industry. It abstracts real-world property management, title registration, transaction brokerage, financial processing, and maintenance systems.[5] This design creates stronger linkage between ownership housing and the urban service sector, while limiting `services` to mid/high-tier PMs to avoid making low-end housing fully dependent on service supply.[5]
+Introducing the `services` good to housing buildings does not mean housing itself is a pure service industry. It abstracts real-world property management, title registration, transaction brokerage, financial processing, and maintenance systems.[5] In the current design, `services` remain concentrated in mid/high-tier ownership PMs, while high-rise rental uses only a small amount and low-/mid-tier rental uses none. This keeps the main service-chain linkage on the ownership side without making ordinary rental housing dependent on service supply.[5]
 
 ## Employment Structure
 
