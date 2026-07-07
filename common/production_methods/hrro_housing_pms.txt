@@ -14,7 +14,7 @@ pm_hrro_tenement = {
             building_employment_engineers_add = 250
             goods_input_wood_add = 12
             goods_input_furniture_add = 5
-            goods_output_rented_housing_add = 6
+            goods_output_rented_housing_add = 7
         }
     }
 }
@@ -33,7 +33,7 @@ pm_hrro_apartment = {
             goods_input_glass_add = 10
             goods_input_furniture_add = 6
             goods_input_steel_add = 12
-            goods_output_rented_housing_add = 12
+            goods_output_rented_housing_add = 14
         }
     }
 }
@@ -53,7 +53,7 @@ pm_hrro_highrise_rental = {
             goods_input_furniture_add = 12
             goods_input_services_add = 2
             goods_input_electricity_add = 10
-            goods_output_rented_housing_add = 22
+            goods_output_rented_housing_add = 25
         }
     }
 }
