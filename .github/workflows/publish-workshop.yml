@@ -1,0 +1,74 @@
+name: Publish to Steam Workshop
+
+# Releases are driven by version tags. Bump version in
+# .metadata/metadata.json, commit, then push a matching tag (v1.0.2).
+#
+# Required repository secrets:
+#   WORKSHOP_ITEM_ID      Numeric id of the EXISTING workshop item. Never 0.
+#                         The script refuses to run without it, so a run can
+#                         never create a duplicate item.
+#   STEAM_USERNAME        Steam account that owns the item and Victoria 3.
+#   STEAM_CONFIG_VDF_B64  Cached SteamCMD login session. Generate once on a
+#                         machine with SteamCMD installed:
+#                           steamcmd +login <username> +quit
+#                         Enter the password and Steam Guard code when asked.
+#                         Repeat until no code is requested, then run:
+#                           base64 -w 0 <steamcmd>/config/config.vdf
+#                         Paste the output into the secret. No password is
+#                         stored in this repository or in the workflow.
+#                         If the login check fails, also provide the matching
+#                         ssfn file referenced by config.vdf.
+#
+# The VDF deliberately omits title, description, tags, visibility and
+# previewfile. Steam leaves those fields untouched, so an update only replaces
+# mod content and the change note. Set them once on the workshop page.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release
+        uses: actions/checkout@v4
+
+      - name: Install SteamCMD
+        uses: buildalon/setup-steamcmd@v1
+
+      - name: Restore cached Steam login
+        env:
+          STEAM_CONFIG_VDF_B64: ${{ secrets.STEAM_CONFIG_VDF_B64 }}
+        run: |
+          set -euo pipefail
+          if [ -z "$STEAM_CONFIG_VDF_B64" ]; then
+            echo "STEAM_CONFIG_VDF_B64 is not set" >&2
+            exit 1
+          fi
+          mkdir -p "$STEAM_DIR/config"
+          printf '%s' "$STEAM_CONFIG_VDF_B64" | base64 -d > "$STEAM_DIR/config/config.vdf"
+          chmod 600 "$STEAM_DIR/config/config.vdf"
+
+      - name: Verify cached Steam login
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+        run: |
+          set -euo pipefail
+          "$STEAM_CMD/steamcmd.sh" \
+            +@ShutdownOnFailedCommand 1 \
+            +@NoPromptForPassword 1 \
+            +login "$STEAM_USERNAME" \
+            +quit
+
+      - name: Publish update
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          WORKSHOP_ITEM_ID: ${{ secrets.WORKSHOP_ITEM_ID }}
+          RELEASE_TAG: ${{ github.event_name == 'push' && github.ref_name || '' }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: python3 scripts/publish_workshop.py

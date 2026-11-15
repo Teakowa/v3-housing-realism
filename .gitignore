@@ -16,3 +16,8 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
+### Workshop publishing
+# Generated staging tree and VDF build files
+.publish-staging/
+.publish/
