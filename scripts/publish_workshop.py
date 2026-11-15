@@ -43,6 +43,7 @@ INCLUDE = (
     "gui",
     "localization",
     "thumbnail.png",
+    "LICENSE",
 )
 
 
