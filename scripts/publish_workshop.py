@@ -139,9 +139,11 @@ def run_steamcmd(vdf: Path, item_id: str) -> None:
     if not username:
         fail("STEAM_USERNAME is not set")
     steam_dir = os.environ.get("STEAM_CMD", "").strip()
-    steamcmd = Path(steam_dir) / "steamcmd.sh" if steam_dir else shutil.which("steamcmd")
-    if not steamcmd or not Path(steamcmd).is_file():
-        fail("steamcmd.sh not found; set STEAM_CMD to the directory containing it")
+    if not steam_dir:
+        fail("STEAM_CMD is not set; expected the directory containing steamcmd.sh")
+    steamcmd = Path(steam_dir) / "steamcmd.sh"
+    if not steamcmd.is_file():
+        fail(f"steamcmd.sh not found at {steamcmd}")
 
     command = [
         str(steamcmd),
