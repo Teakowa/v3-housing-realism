@@ -43,7 +43,7 @@ Both housing goods are local goods, so housing pressure and price are state-leve
 - Mod name: `Housing Realism`
 - Mod ID: `com.housing_realism`
 - Game: `victoria3`
-- Supported game version: `1.13.*`
+- Supported game version: `1.15.*`
 - Multiplayer synchronized: `false`
 
 Source of truth: `.metadata/metadata.json`

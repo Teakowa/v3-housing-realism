@@ -1,6 +1,6 @@
 # Housing Mod - Incremental buy_packages injection via Victoria 3 database entry modes
 # Generated from the previous full override to preserve the housing demand curve
-# while using native INJECT entries for 1.13 compatibility.
+# while using native INJECT entries.
 
 INJECT:wealth_1 = {
 	goods = {

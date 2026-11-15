@@ -34,3 +34,38 @@ goods_output_owned_housing_mult = {
         ai_value = 0
     }
 }
+
+# Vanilla 1.15 declares goods_input_*_add only for goods that vanilla PMs consume.
+# The housing PMs consume these four goods, so declare their input modifier types here.
+# REPLACE_OR_CREATE: also allows another mod to have declared the same type first.
+REPLACE_OR_CREATE:goods_input_furniture_add = {
+    decimals = 1
+    color = bad
+    game_data = {
+        ai_value = 0
+    }
+}
+
+REPLACE_OR_CREATE:goods_input_services_add = {
+    decimals = 1
+    color = bad
+    game_data = {
+        ai_value = 0
+    }
+}
+
+REPLACE_OR_CREATE:goods_input_porcelain_add = {
+    decimals = 1
+    color = bad
+    game_data = {
+        ai_value = 0
+    }
+}
+
+REPLACE_OR_CREATE:goods_input_luxury_furniture_add = {
+    decimals = 1
+    color = bad
+    game_data = {
+        ai_value = 0
+    }
+}

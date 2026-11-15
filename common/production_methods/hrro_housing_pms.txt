@@ -8,13 +8,17 @@ pm_hrro_tenement = {
     texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 4
             building_employment_laborers_add = 1400
             building_employment_shopkeepers_add = 350
             building_employment_engineers_add = 250
             goods_input_wood_add = 12
             goods_input_furniture_add = 5
             goods_output_rented_housing_add = 7
+        }
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 4
         }
     }
 }
@@ -24,7 +28,6 @@ pm_hrro_apartment = {
     texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 7
             building_employment_laborers_add = 960
             building_employment_shopkeepers_add = 360
             building_employment_engineers_add = 480
@@ -36,6 +39,11 @@ pm_hrro_apartment = {
             goods_output_rented_housing_add = 14
         }
     }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 7
+        }
+    }
 }
 
 pm_hrro_highrise_rental = {
@@ -43,7 +51,6 @@ pm_hrro_highrise_rental = {
     texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 9
             building_employment_laborers_add = 240
             building_employment_shopkeepers_add = 480
             building_employment_engineers_add = 600
@@ -54,6 +61,11 @@ pm_hrro_highrise_rental = {
             goods_input_services_add = 2
             goods_input_electricity_add = 10
             goods_output_rented_housing_add = 25
+        }
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 9
         }
     }
 }
@@ -88,7 +100,6 @@ pm_hrro_rowhouse = {
     texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 4
             building_employment_laborers_add = 1320
             building_employment_shopkeepers_add = 550
             building_employment_engineers_add = 330
@@ -98,6 +109,11 @@ pm_hrro_rowhouse = {
             goods_output_owned_housing_add = 5
         }
     }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 4
+        }
+    }
 }
 
 pm_hrro_suburban_villa = {
@@ -105,7 +121,6 @@ pm_hrro_suburban_villa = {
     texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 6
             building_employment_laborers_add = 720
             building_employment_shopkeepers_add = 432
             building_employment_engineers_add = 528
@@ -118,6 +133,11 @@ pm_hrro_suburban_villa = {
             goods_output_owned_housing_add = 11
         }
     }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 6
+        }
+    }
 }
 
 pm_hrro_luxury_estate = {
@@ -125,7 +145,6 @@ pm_hrro_luxury_estate = {
     texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
     building_modifiers = {
         level_scaled = {
-            building_pollution_generation_add = 5
             building_employment_laborers_add = 250
             building_employment_shopkeepers_add = 500
             building_employment_engineers_add = 625
@@ -137,6 +156,11 @@ pm_hrro_luxury_estate = {
             goods_input_services_add = 8
             goods_input_electricity_add = 7
             goods_output_owned_housing_add = 19
+        }
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
         }
     }
 }

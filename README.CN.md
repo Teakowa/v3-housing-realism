@@ -43,7 +43,7 @@ Housing Realism 是一个 *Victoria 3* 经济类模组，将住房从“隐含�
 - 模组名：`Housing Realism`
 - Mod ID：`com.housing_realism`
 - 游戏：`victoria3`
-- 支持版本：`1.13.*`
+- 支持版本：`1.15.*`
 - 多人同步：`false`
 
 以上以 `.metadata/metadata.json` 为准。
