@@ -10,7 +10,8 @@ Required environment:
   STEAM_CMD          directory containing steamcmd.sh (set by setup-steamcmd).
 
 Optional:
-  RELEASE_TAG        tag that triggered the run, e.g. v1.0.2.
+  RELEASE_TAG        tag that triggered the run, e.g. v1.0.2. Required
+                     unless --dry-run is used.
   COMMIT_SHA         short commit hash used in the change note.
   CHANGE_NOTE        override the change note.
 """
@@ -78,10 +79,12 @@ def resolve_item_id() -> str:
     return item_id
 
 
-def check_release_tag(version: str) -> None:
+def check_release_tag(version: str, dry_run: bool) -> None:
     tag = os.environ.get("RELEASE_TAG", "").strip()
     if not tag:
-        return
+        if dry_run:
+            return
+        fail("RELEASE_TAG is not set; publishing runs only from a version tag")
     if tag != f"v{version}":
         fail(f"tag {tag!r} does not match metadata version {version!r}; expected v{version}")
 
@@ -193,7 +196,7 @@ def main() -> None:
     metadata = read_metadata()
     version = metadata["version"]
     item_id = resolve_item_id()
-    check_release_tag(version)
+    check_release_tag(version, args.dry_run)
 
     sha = os.environ.get("COMMIT_SHA", "").strip()[:7]
     note = os.environ.get("CHANGE_NOTE", "").strip() or f"v{version}" + (f" ({sha})" if sha else "")
