@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """Publish a Housing Realism release to an existing Steam Workshop item.
 
-Run by .github/workflows/publish-workshop.yml. Use --dry-run to run every local
-check and write the VDF without contacting Steam.
+Run it by hand on Windows or macOS from a clean checkout of the release tag.
+Use --dry-run to run the content checks and write the VDF without contacting
+Steam or checking git.
 
 Required environment:
   WORKSHOP_ITEM_ID   publishedfileid of the existing item. Must be non-zero.
   STEAM_USERNAME     Steam account owning that item.
-  STEAM_CMD          directory containing steamcmd.sh (set by setup-steamcmd).
 
-Optional:
-  RELEASE_TAG        tag that triggered the run, e.g. v1.0.2. Required
-                     unless --dry-run is used.
-  COMMIT_SHA         short commit hash used in the change note.
-  CHANGE_NOTE        override the change note.
+Optional environment:
+  STEAM_CMD          directory containing steamcmd.sh or steamcmd.exe. When
+                     unset, steamcmd is looked up on PATH.
+
+The first step logs in interactively, so SteamCMD asks for the password and
+Steam Guard code when it has no cached session. SteamCMD keeps the session on
+this machine; no credential is stored in the repository.
 """
 
 from __future__ import annotations
@@ -25,14 +27,13 @@ import re
 import shutil
 import subprocess
 import sys
-import time
 from pathlib import Path
 
 APP_ID = "529340"
 ROOT = Path(__file__).resolve().parent.parent
 METADATA = ROOT / ".metadata" / "metadata.json"
 PUBLISH_ROOT = ROOT / ".publish"
-STAGING_ROOT = ROOT / ".publish-staging"
+STAGING = ROOT / ".publish-staging" / "current"
 
 # Only game-facing content goes into the workshop item. Repository tooling,
 # docs and release scripts must never be uploaded.
@@ -79,28 +80,34 @@ def resolve_item_id() -> str:
     return item_id
 
 
-def check_release_tag(version: str, dry_run: bool) -> None:
-    tag = os.environ.get("RELEASE_TAG", "").strip()
-    if not tag:
-        if dry_run:
-            return
-        fail("RELEASE_TAG is not set; publishing runs only from a version tag")
-    if tag != f"v{version}":
-        fail(f"tag {tag!r} does not match metadata version {version!r}; expected v{version}")
+def git(*args: str) -> str:
+    result = subprocess.run(
+        ["git", *args], cwd=ROOT, text=True, capture_output=True, check=False
+    )
+    if result.returncode != 0:
+        fail(f"git {' '.join(args)} failed: {result.stderr.strip()}")
+    return result.stdout
 
 
-def build_staging(run_id: str) -> Path:
-    staging = STAGING_ROOT / run_id
-    if staging.exists():
-        fail(f"staging path already exists: {staging}")
-    staging.mkdir(parents=True)
+def check_release_checkout(version: str) -> None:
+    if git("status", "--porcelain").strip():
+        fail("working tree has uncommitted changes; commit or stash them first")
+    tags = git("tag", "--points-at", "HEAD").split()
+    if f"v{version}" not in tags:
+        fail(f"HEAD is not tagged v{version} (tags at HEAD: {tags or 'none'})")
+
+
+def build_staging() -> Path:
+    if STAGING.exists():
+        shutil.rmtree(STAGING)
+    STAGING.mkdir(parents=True)
 
     included: list[str] = []
     for name in INCLUDE:
         source = ROOT / name
         if not source.exists():
             continue
-        target = staging / name
+        target = STAGING / name
         if source.is_dir():
             shutil.copytree(source, target)
         else:
@@ -109,16 +116,16 @@ def build_staging(run_id: str) -> Path:
 
     if ".metadata" not in included:
         fail("staging has no .metadata directory; launcher would not recognise the mod")
-    if not (staging / ".metadata" / "metadata.json").is_file():
+    if not (STAGING / ".metadata" / "metadata.json").is_file():
         fail("staging is missing .metadata/metadata.json")
     if "common" not in included:
         fail("staging has no common/ directory")
-    return staging
+    return STAGING
 
 
-def write_vdf(run_id: str, staging: Path, item_id: str, note: str) -> Path:
+def write_vdf(staging: Path, item_id: str, note: str) -> Path:
     PUBLISH_ROOT.mkdir(exist_ok=True)
-    vdf = PUBLISH_ROOT / f"workshop-{run_id}.vdf"
+    vdf = PUBLISH_ROOT / "workshop.vdf"
 
     # Keys omitted from the VDF are left untouched on the workshop page.
     # title, description, visibility, tags and previewfile are intentionally
@@ -137,19 +144,36 @@ def write_vdf(run_id: str, staging: Path, item_id: str, note: str) -> Path:
     return vdf
 
 
+def find_steamcmd() -> Path:
+    steam_dir = os.environ.get("STEAM_CMD", "").strip()
+    if steam_dir:
+        for name in ("steamcmd.exe", "steamcmd.sh"):
+            candidate = Path(steam_dir) / name
+            if candidate.is_file():
+                return candidate
+        fail(f"no steamcmd.exe or steamcmd.sh in STEAM_CMD={steam_dir}")
+    found = shutil.which("steamcmd")
+    if not found:
+        fail("steamcmd not found; set STEAM_CMD to its directory or add it to PATH")
+    return Path(found)
+
+
 def run_steamcmd(vdf: Path, item_id: str) -> None:
     username = os.environ.get("STEAM_USERNAME", "").strip()
     if not username:
         fail("STEAM_USERNAME is not set")
-    steam_dir = os.environ.get("STEAM_CMD", "").strip()
-    if not steam_dir:
-        fail("STEAM_CMD is not set; expected the directory containing steamcmd.sh")
-    steamcmd = Path(steam_dir) / "steamcmd.sh"
-    if not steamcmd.is_file():
-        fail(f"steamcmd.sh not found at {steamcmd}")
+    steamcmd = str(find_steamcmd())
 
+    # Interactive login: the terminal stays attached so SteamCMD can ask for
+    # the password and Steam Guard code, then caches the session.
+    print("logging in; enter the password and Steam Guard code if asked", flush=True)
+    login = subprocess.run([steamcmd, "+login", username, "+quit"], check=False)
+    if login.returncode != 0:
+        fail(f"steamcmd login exited with {login.returncode}")
+
+    # The session is cached now, so the upload must never prompt.
     command = [
-        str(steamcmd),
+        steamcmd,
         "+@NoPromptForPassword",
         "1",
         "+@ShutdownOnFailedCommand",
@@ -191,27 +215,23 @@ def run_steamcmd(vdf: Path, item_id: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true", help="build staging and VDF only")
+    parser.add_argument("--note", help="change note (default: the version)")
     args = parser.parse_args()
 
     metadata = read_metadata()
     version = metadata["version"]
     item_id = resolve_item_id()
-    check_release_tag(version, args.dry_run)
+    if not args.dry_run:
+        check_release_checkout(version)
 
-    sha = os.environ.get("COMMIT_SHA", "").strip()[:7]
-    note = os.environ.get("CHANGE_NOTE", "").strip() or f"v{version}" + (f" ({sha})" if sha else "")
+    note = (args.note or "").strip() or f"v{version}"
     # Steam rejects SubmitItemUpdate above ~8000 bytes even when the text is
     # well under the character limit (EResult=8 on multi-byte descriptions).
     if len(note.encode("utf-8")) > 8000:
         fail("change note exceeds Steam's 8000-byte limit")
-    if args.dry_run:
-        # Local dry runs must not collide with an earlier staging tree.
-        run_id = f"dryrun-{time.time_ns()}"
-    else:
-        run_id = sha or f"local-{time.strftime('%Y%m%d-%H%M%S')}"
 
-    staging = build_staging(run_id)
-    vdf = write_vdf(run_id, staging, item_id, note)
+    staging = build_staging()
+    vdf = write_vdf(staging, item_id, note)
 
     files = sorted(
         str(path.relative_to(staging)) for path in staging.rglob("*") if path.is_file()

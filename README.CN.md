@@ -103,6 +103,19 @@ Housing Realism 是一个 *Victoria 3* 经济类模组，将住房从“隐含�
 - key 命名在 `common/*` 与 localization 中一致。
 - 不混入无关重构。
 
+### 发布到 Steam 创意工坊
+
+发布在 Windows 或 macOS 上手动运行，使用 `scripts/publish_workshop.py` 和 SteamCMD。脚本只更新已有的创意工坊条目，不会新建条目。
+
+1. 在 `.metadata/metadata.json` 中提升 `version`，提交到 `main`，并给该提交打 `v<version>` 标签。
+2. 在干净的工作区中检出该标签。
+3. 设置 `WORKSHOP_ITEM_ID`（已有条目的 id）和 `STEAM_USERNAME`。如果 `steamcmd` 不在 `PATH` 中，把 `STEAM_CMD` 设为 SteamCMD 所在目录。
+4. 运行 `python3 scripts/publish_workshop.py --dry-run`，检查文件列表。
+5. 运行 `python3 scripts/publish_workshop.py [--note "更新说明"]`。SteamCMD 询问时输入密码和 Steam Guard 验证码。
+6. 在创意工坊页面检查更新说明、文件列表，并用全新订阅验证。
+
+首次发布时，请把 `WORKSHOP_ITEM_ID` 指向私有测试条目。SteamCMD 可能会跳过隐藏的 `.metadata` 目录，而脚本只能在上传之后才检测到。
+
 ## 当前非目标（Non-goals）
 
 - 尚未落地法律系统联动。

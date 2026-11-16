@@ -109,6 +109,19 @@ Source of truth: `.metadata/metadata.json`
 - Key names are consistent across `common/*` and localization.
 - No unrelated refactors are mixed into the same PR.
 
+### Publishing to Steam Workshop
+
+Publishing runs by hand on Windows or macOS with `scripts/publish_workshop.py` and SteamCMD. It updates an existing workshop item; it never creates one.
+
+1. Bump `version` in `.metadata/metadata.json`, commit to `main`, and tag the commit `v<version>`.
+2. Check out the tag with a clean working tree.
+3. Set `WORKSHOP_ITEM_ID` (existing item id) and `STEAM_USERNAME`. Set `STEAM_CMD` to the SteamCMD directory if `steamcmd` is not on `PATH`.
+4. Run `python3 scripts/publish_workshop.py --dry-run` and check the file list.
+5. Run `python3 scripts/publish_workshop.py [--note "change note"]`. Enter the password and Steam Guard code when SteamCMD asks.
+6. On the workshop page, check the change note, the file list, and a fresh subscription.
+
+For the first release, point `WORKSHOP_ITEM_ID` at a private test item. SteamCMD may skip the hidden `.metadata` directory, and the script detects this only after the upload.
+
 ## Non-goals (Current Version)
 
 - No law-system integration shipped yet.
